@@ -7,10 +7,8 @@ class MyString
   int string_length;    // 문자열 길이
 
 public:
-  MyString(char c); // 문자 하나로 생성
-
-  MyString(const char *str); // 문자열로 부터 생성
-
+  MyString(char c);              // 문자 하나로 생성
+  MyString(const char *str);     // 문자열로 부터 생성
   MyString(const MyString &str); // 복사 생성자
 
   ~MyString();
@@ -72,6 +70,9 @@ void MyString::print() const
   }
 }
 
+/**
+ * @note print all strings
+ */
 void MyString::println() const
 {
   for (int i = 0; i != string_length; i++)
